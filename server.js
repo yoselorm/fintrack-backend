@@ -875,7 +875,7 @@ RESPONSE STRUCTURE:
 
 
 // Database connection
-mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://yoselorm:qipNYQZDujCwHU8x@cluster0.qpvcll7.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
+mongoose.connect(process.env.MONGODB_URI)
   .then(() => console.log('Connected to MongoDB'))
   .catch(err => console.error('MongoDB connection error:', err));
 
